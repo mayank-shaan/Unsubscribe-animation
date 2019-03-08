@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,700|Baloo+Thambi');
+body {
+	background: #1976d2;
+}
+.wrapper {
+    position: absolute;
+    width: 1200px;
+    height: 700px;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(209, 105, 105, 0.5);
+}
+.wrapper .left-side {
+	width: 60%;
+	float: left;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.wrapper .left-side .txt {
+	width: 60%;
+}
+.wrapper .left-side .txt h3 {
+    font-size: 32px;
+    color: #1976d2 !important;
+    margin-bottom: 15px;
+    text-align: center;
+   	font-family: 'Baloo Thambi', cursive;
+    font-weight: bold;
+ }
+ .wrapper .left-side .txt p {
+ 	font-family: 'Baloo Thambi', cursive;
+ 	font-size: 18px;
+ 	line-height: 24px;
+ 	margin: 1.5em 0;
+  	color: #1976d2 !important;
+ }
+.wrapper .left-side .txt .btns {
+ 	display: inline-block;
+ 	width: 100%;
+ 	margin-top: 1em;
+ 	text-align: center;
+}
+.wrapper .left-side .txt .btns a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 6px;
+    margin: 0 1em;
+    font-family: 'Baloo Thambi', cursive;
+    transition: all 0.5s
+}
+
+.wrapper .left-side .txt .btns a.unbs {
+    background: #1976d2 !important;
+    color: #fff;
+    letter-spacing: 1px;
+		cursor: pointer;
+}
+.wrapper .left-side .txt .btns a.unbs:hover {
+    background: #bd4646;
+    transition: all 0.5s
+}
+.wrapper .left-side .txt .btns a.cancel {
+    background: #a5a5a5;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.wrapper .left-side .txt .btns a.cancel:hover {
+    background: #929292;
+    transition: all 0.5s
+}
+.wrapper .right-side {
+	width: 40%;
+	float: right;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.wrapper .right-side .img-bg {
+	width: 381px;
+	height: 319px;
+	background-image: url('../img/0.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.wrapper .right-side .img-in {
+	width: 381px;
+	height: 319px;
+	background-image: url('../img/1.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 0.2s
+}
+
+.logo-wrapper {
+	font-size: 32px;
+	margin-bottom: 15px;
+	text-align: center;
+	transition: all 0.2s
+}
+
+.wrapper .right-side .img-in.sad {
+	background-image: url('../img/2.png');
+	transition: all 0.2s
+}
+.wrapper .right-side .img-in.non {
+	background-image: url('../img/3.png');
+	transition: all 0.2s
+}
+
+@media screen and (max-width: 1000px) {
+    .right-side {
+        display: none !important;
+				width: 0%;
+    }
+    .left-side {
+			width: 100% !important;
+    }
+		.wrapper .left-side .txt {
+			width: 40%;
+			transform: scale(1.7, 1.7);
+		}
+		.wrapper {
+			width: 100%;
+			height: 80%;
+		}
+		body {
+			background: #fff;
+		}
+}
